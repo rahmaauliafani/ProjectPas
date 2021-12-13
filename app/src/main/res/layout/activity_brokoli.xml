@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bck3"
+    tools:context=".ActivityBrokoli">
+
+
+    <TextView
+        android:id="@+id/brokoli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Brokoli"
+        android:textColor="@color/black"
+        android:textSize="16pt"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/br"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/brokoli"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brokoli" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="403dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:text="Brokoli hijau memiliki kandungan kalsium, fosfor, dan vitamin K yang cukup tinggi.
+        Kandungan nutrisi tersebut bermanfaat untuk menjaga kepadatan tulang, memperkuat tulang dan sendi,
+        serta mencegah penyakit osteoporosis yang membuat tulang keropos."
+        android:textColor="@color/white"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/br" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:text="GALLERY"
+        android:id="@+id/btnBrokoli"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
